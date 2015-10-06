@@ -30,24 +30,18 @@
 			<h3 class="text-center">Our Featured Work</h3>
 			<hr>
 				<div class="row">
-				  <div class="col-md-6">
-				    <div class="thumbnail">
-				      <img src="holder.js/500x250?text=Teaser Image">
-				      <div class="caption">
-				        <h3>Absa's Casino Year-End</h3>
-				        <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="col-md-6">
-				    <div class="thumbnail">
-				      <img src="holder.js/500x250?text=Teaser Image">
-				      <div class="caption">
-				        <h3>Discovery's Mexican Year-End</h3>
-				        <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>				     
-				      </div>
-				    </div>
-				  </div>
+				  {% for item in model.items %}
+			  		<div class="col-md-6">
+						<div class="thumbnail">
+				  			<a href="/single"><img src="holder.js/500x250?text=Teaser Image"></a>
+				  			<div class="caption">
+								<a href="/single"><h3>{{ item.title }}<br><small>{{ item.description }}</small></h3></a>
+								<p>{{ item.excerpt }}</p>
+								<a href="/single" class="btn btn-link">View More <i class="fa fa-long-arrow-right"></i></a>
+				  			</div>
+						</div>
+			  		</div>
+			  	{% endfor %}
 				</div>
 		</div>
 	</div>
