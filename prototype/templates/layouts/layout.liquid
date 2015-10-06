@@ -2,25 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{% block title %}Mixture + Bootstrap{% endblock %}</title>
+        <title>{% block title %}Grand Room Design{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         {{ "bootstrap.css" | asset_url | stylesheet_tag }}
-        <style>
-            body {
-                padding-top: 50px;
-            }
-            .starter-template {
-                padding: 40px 15px;
-            }
-        </style>
-        <!-- TODO: Complete this project :) -->
+        {{ "theme.css" | asset_url | stylesheet_tag }}
     </head>
     <body>
         {% include "navigation" %}
-        <div class="container">
+        <div class="container content">
             {% block content %}{% endblock %}
         </div>
+        {% include "footer" %}
         <script src="//code.jquery.com/jquery.min.js"></script>
         {{ "bootstrap.js" | asset_url | script_tag }}
+        {{ "holder.min.js" | asset_url | script_tag }}
     </body>
 </html>

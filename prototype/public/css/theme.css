@@ -1,0 +1,25 @@
+.content {
+  padding-top: 50px;
+}
+.hero {
+  position: relative;
+  border-bottom: 1px solid #fff;
+}
+.hero .hero__cta {
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 20px;
+}
+.testimonials {
+  padding: 30px;
+}
+.testimonials img {
+  margin: auto;
+}
+.testimonials blockquote p {
+  font-style: italic;
+}
+.testimonials .carousel-control {
+  background-image: none;
+}
