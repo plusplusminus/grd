@@ -11,7 +11,19 @@
   background-color: rgba(255, 255, 255, 0.7);
   padding-bottom: 20px;
 }
+#about .hero .hero__cta {
+  position: relative;
+  bottom: inherit;
+}
 #weddings .hero .hero__cta {
+  position: relative;
+  bottom: inherit;
+}
+#corporate .hero .hero__cta {
+  position: relative;
+  bottom: inherit;
+}
+#contact .hero .hero__cta {
   position: relative;
   bottom: inherit;
 }
@@ -26,8 +38,4 @@
 }
 .testimonials .carousel-control {
   background-image: none;
-}
-.sidebar {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
