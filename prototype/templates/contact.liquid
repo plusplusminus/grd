@@ -3,64 +3,66 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-11 col-md-offset-1">
-						<h2>Let's Talk</h2>
-					</div>
-					<div class="hero__cta col-md-6 col-md-offset-1">
-						<p class="cta--text lead">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</p>
-					</div>
-
-					
-					<div class="sidebar col-md-4">
-						<ul class="list-group">
-							<li class="list-group-item lead"><i class="fa fa-phone"></i>  000 000 0000</li>
-							<li class="list-group-item lead"><i class="fa fa-envelope"></i>  hello@grd.com</li>
-							<li class="list-group-item lead"><i class="fa fa-home"></i>  44 Vehicula Sollicitudin Tellus</li>
-						</ul>
-					</div>
-				</div>
-			 </div>
+			<div class="hero__image">
+				<img src="holder.js/100px600?text=Impressive Image">
+			</div>
 		</div>
 	</div>
 </div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-11 col-md-offset-1">
+			<h2>Let's Talk</h2>
+		</div>
+		<div class="hero__cta col-md-6 col-md-offset-1">
+			<span class="lead">
+				<h4>Cape Town Office</h4>
+				<p>+27 (0)82 790 4425</p>
+				<p>hello@grandroomdesign.co.za</p>
+				<p>Dawn Mountains Farm,<br>Klapmuts-Simondium Rd, R45,<br>Simondium</p>
+				<hr>
+				<h4>Bloemfontein Office</h4>
+				<p>+27 (0)51 430 2910</p>
+				<p>hello@grandroomdesign.co.za</p>
+				<p>12 Oranje St, Hilton,<br>Bloemfontein</p>
+			</span>
+		</div>
+		
+		<div class="sidebar col-md-4">
+			<form>
+				<div class="form-group">
+					<label for="exampleInputName2">Name</label>
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="">
+				</div>
+				<div class="form-group">
+				    <label for="exampleInputEmail2">Email</label>
+					<input type="email" class="form-control" id="exampleInputEmail2" placeholder="">
+				</div>
+				<div class="form-group">
+					<label for="select">Subject</label>
+					<select class="form-control">
+						<option>Wedding Enquiry</option>
+						<option>Function Enquiry</option>
+						<option>Client Service</option>
+						<option>Other</option>
+					</select>	
+				</div>
+				<div class="form-group">
+					<label for="textarea">Message</label>
+					<textarea class="form-control" rows="5"></textarea>
+				</div>
+				  <button type="submit" class="btn btn-default">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</div>
+ </div>
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
-			<h3 class="text-center">Enquiry Form</h3>
-				<hr>
-					<form>
-					<div class="form-group">
-						<label for="exampleInputName2">Name</label>
-						<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-					</div>
-					<div class="form-group">
-					    <label for="exampleInputEmail2">Email</label>
-						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-					</div>
-					<div class="form-group">
-						<label for="select">Subject</label>
-						<select class="form-control">
-							<option>Wedding Enquiry</option>
-							<option>Function Enquiry</option>
-							<option>Client Service</option>
-							<option>Other</option>
-						</select>	
-					</div>
-					<div class="form-group">
-						<label for="textarea">Message</label>
-						<textarea class="form-control" rows="5" placeholder="How can we help?">
-						</textarea>
-					</div>
-					<div class="checkbox">
-					    <label>
-					     <input type="checkbox"> Send myself a copy
-					    </label>
-					</div>
-					  <button type="submit" class="btn btn-default">Send</button>
-					</form>
-				</div>
+				
 		</div>
 	</div>
 {% endblock %}
