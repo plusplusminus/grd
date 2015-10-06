@@ -1,0 +1,78 @@
+{% block content %}
+</div><!--/.containter-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="hero">
+			<div class="hero__image">
+				<img src="holder.js/100px600?text=Featured Image">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<h2>Amet Vulputate Elit<br><small>Description Magna Consectetur Risus Tristique Sem</small></h2>
+					</div>
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<p class="cta--text lead">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
+						<p><button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Enquire about our services</button>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+
+						<div class="row">
+							<div class="col-md-12">
+								<br><hr><br>
+								<img src="holder.js/100px400?text=Image">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-4">
+								<img src="holder.js/100px400?text=Image">
+							</div>
+							<div class="col-md-4">
+								<img src="holder.js/100px400?text=Image">
+							</div>
+							<div class="col-md-4">
+								<img src="holder.js/100px400?text=Image">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-12">
+								<img src="holder.js/100px400?text=Image">
+							</div>
+							<hr>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<br><hr><br>
+						<h3 class="text-center">View More Of Our Featured Work</h3>
+						<hr>
+						<div class="row">
+							{% for item in model.items %}
+						  		<div class="col-md-6">
+									<div class="thumbnail">
+							  			<a href="/single"><img src="holder.js/500x250?text=Teaser Image"></a>
+							  			<div class="caption">
+											<a href="/single"><h3>{{ item.title }}<br><small>{{ item.description }}</small></h3></a>
+											<p>{{ item.excerpt }}</p>
+											<a href="/single" class="btn btn-link">View More <i class="fa fa-long-arrow-right"></i></a>
+							  			</div>
+									</div>
+						  		</div>
+						  	{% endfor %}
+						</div>
+					</div>
+				</div>
+
+			 </div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
