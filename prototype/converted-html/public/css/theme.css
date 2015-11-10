@@ -1,0 +1,41 @@
+.content {
+  padding-top: 50px;
+}
+.hero {
+  position: relative;
+  border-bottom: 1px solid #fff;
+}
+.hero .hero__cta {
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 20px;
+}
+#about .hero .hero__cta {
+  position: relative;
+  bottom: inherit;
+}
+#weddings .hero .hero__cta {
+  position: relative;
+  bottom: inherit;
+}
+#corporate .hero .hero__cta {
+  position: relative;
+  bottom: inherit;
+}
+#contact .hero .hero__cta {
+  position: relative;
+  bottom: inherit;
+}
+.testimonials {
+  padding: 30px;
+}
+.testimonials img {
+  margin: auto;
+}
+.testimonials blockquote p {
+  font-style: italic;
+}
+.testimonials .carousel-control {
+  background-image: none;
+}

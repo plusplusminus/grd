@@ -13,30 +13,28 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-md-5 text-center">
+			<div class="col-md-5 col-md-offset-1 text-center">
 				<h2>Amet Vulputate Elit<br><small>Description Magna Consectetur Risus Tristique Sem</small></h2>
-				<p class="cta--text lead">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
+				<p class="cta--text lead">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 				<p><button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Enquire about our services</button></p>
 			</div>
 
-			<div class="col-md-7">
+			<div class="col-md-6">
 				<div class="testimonials text-center">
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
 						<!-- Wrapper for slides -->
-						  <div class="carousel-inner" role="listbox">
+						<div class="carousel-inner" role="listbox">
 						  	{% for slide in model.slides %}
-							    <div class="item {{ slide.class }}">
+						    	<div class="item {{ slide.class }}">
 							        <img class="img-circle" src="holder.js/120x120?text=Profile">
-							        <h3>{{ slide.name }}
-							        <br>
-							        <small>{{ slide.role }} </small></h3>
+							        <h3>{{ slide.name }} <br><small>{{ slide.role }} </small></h3>
 							        <blockquote>
 							          <p>"{{ slide.content }}"</p>
 							        </blockquote>
-							    </div>
-						    {% endfor %}
-						  </div>
+						        </div>
+							{% endfor %}
+					    </div>
 
 						<!-- Controls -->
 						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -50,8 +48,9 @@
 
 					</div>
 				</div>
-			</div>			
-		</div>	
+			</div>
+		</div>			
+	
 			
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
@@ -105,7 +104,4 @@
 				</div>
 			</div>
 		</div>
-
-
-
 {% endblock %}
