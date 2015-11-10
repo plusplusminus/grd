@@ -1,6 +1,6 @@
 {
   "convertHtml": {
-    "relativePaths": false
+    "relativePaths": true
   },
   "debug": false,
   "domain": null,
@@ -13,7 +13,7 @@
   "preprocessorScriptOutput": "public/js",
   "preprocessorStyleOutput": "public/css",
   "projectDescription": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-  "projectName": "prototype",
+  "projectName": "grd",
   "publishedId": null,
   "serverHostname": null,
   "serverPort": null,
